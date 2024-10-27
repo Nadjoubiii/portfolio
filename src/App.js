@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPython, FaReact, FaDatabase, FaRProject, FaAws, FaChartPie } from 'react-icons/fa';
-import { SiTensorflow, SiJavascript, SiTableau } from 'react-icons/si';
+import { SiTensorflow, SiJavascript, SiTableau, SiPowerbi, SiScikitlearn, SiDjango } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';
 
 
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="font-sans text-gray-900">
       {/* Navigation */}
-      <nav className="bg-gradient-to-r from-orange-500 to-orange-400 sticky top-0 z-50 p-4 shadow-lg">
+      <nav className="bg-gradient-to-r from-blue-900 to-blue-800 sticky top-0 z-50 p-4 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-white text-xl font-bold">Nadjib Tebbal</h1>
           <div className="space-x-6">
@@ -45,7 +45,7 @@ const App = () => {
       <section id="about" className="py-20 container mx-auto text-center">
         <h2 className="text-3xl font-bold">About Me</h2>
         <div className="flex justify-center mt-6">
-          <img src="/profile.jpg" alt="Nadjib Tebbal" className="w-60 h-80 rounded-full border-4 border-orange-500" />
+          <img src="https://i.ibb.co/DM3ybxn/profile2.jpg" alt="Nadjib Tebbal" className="w-60 h-60 rounded-full border-4 border-orange-400" />
         </div>
         <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
           I’m Nadjib, a passionate data science student at the American University of Beirut. I enjoy transforming data into actionable insights using machine learning techniques and statistical analysis.
@@ -77,14 +77,19 @@ const App = () => {
                 <p>Database Management</p>
               </div>
               <div className="p-4 border rounded-lg shadow flex flex-col items-center">
-                <SiTensorflow className="text-orange-500 text-4xl mb-2" />
-                <h3 className="font-bold">TensorFlow</h3>
+                <SiScikitlearn className="text-orange-500 text-4xl mb-2" />
+                <h3 className="font-bold">Scikitlearn</h3>
                 <p>Deep Learning</p>
               </div>
               <div className="p-4 border rounded-lg shadow flex flex-col items-center">
-                <SiTableau className="text-orange-500 text-4xl mb-2" />
-                <h3 className="font-bold">Tableau</h3>
+                <SiPowerbi className="text-orange-500 text-4xl mb-2" />
+                <h3 className="font-bold">PowerBI</h3>
                 <p>Data Visualization</p>
+              </div>
+              <div className="p-4 border rounded-lg shadow flex flex-col items-center">
+                <SiDjango className="text-orange-500 text-4xl mb-2" />
+                <h3 className="font-bold">Django</h3>
+                <p>Backend development</p>
               </div>
             </div>
           </div>
@@ -160,7 +165,7 @@ const App = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-4 text-center">
+      <footer className="bg-blue-900 text-white py-4 text-center">
         <p>&copy; {new Date().getFullYear()} Nadjib Tebbal. All rights reserved.</p>
       </footer>
     </div>
